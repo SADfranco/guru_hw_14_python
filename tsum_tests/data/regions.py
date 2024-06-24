@@ -8,6 +8,6 @@ class Region:
 
 
 @dataclasses.dataclass
-class Regions_all:
+class RegionsAll:
     region_size: int
     region_all_names: list

@@ -13,7 +13,7 @@ class User:
     bd_day: str
 
 @dataclasses.dataclass
-class Existing_user:
+class ExistingUser:
     first_name: str
     last_name: str
     email: str
@@ -22,7 +22,7 @@ class Existing_user:
     bday_data: str
 
 @dataclasses.dataclass
-class Nonexisting_user:
+class NonExistingUser:
     first_name: str
     email: str
     password: str

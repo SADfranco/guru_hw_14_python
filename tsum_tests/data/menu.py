@@ -2,6 +2,6 @@ import dataclasses
 
 
 @dataclasses.dataclass
-class Profile_menu:
+class ProfileMenu:
     size: int
     all_menu: list

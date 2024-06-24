@@ -1,11 +1,6 @@
 import os
 import allure
 from allure_commons.types import AttachmentType
-# from dotenv import load_dotenv
-#
-#
-# def load_env():
-#     load_dotenv()
 
 
 def add_screenshot(browser):

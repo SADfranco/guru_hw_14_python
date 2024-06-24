@@ -6,14 +6,15 @@ from utils import attach
 from dotenv import load_dotenv
 import os
 
+
 def pytest_addoption(parser):
     parser.addoption("--browser_version", default="122.0")
     parser.addoption("--browser_name", default="chrome")
 
+
 @pytest.fixture(scope="session", autouse=True)
 def load_env():
     load_dotenv()
-
 
 
 @pytest.fixture(scope='function', autouse=True)
@@ -35,7 +36,6 @@ def configuration(request):
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--incognito")
     options.add_argument("--disable-notifications")
-
 
     selenoid_login = os.getenv("SELENOID_LOGIN")
     selenoid_pass = os.getenv("SELENOID_PASS")

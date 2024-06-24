@@ -12,6 +12,7 @@ class User:
     bd_month: str
     bd_day: str
 
+
 @dataclasses.dataclass
 class ExistingUser:
     first_name: str
@@ -20,6 +21,7 @@ class ExistingUser:
     password: str
     phone_number: str
     bday_data: str
+
 
 @dataclasses.dataclass
 class NonExistingUser:

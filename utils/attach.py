@@ -9,8 +9,11 @@ def add_screenshot(browser):
 
 
 def add_logs(browser):
-    log = "".join(f'{text}\n' for text in browser.driver.get_log(log_type='browser'))
-    allure.attach(log, 'browser_logs', AttachmentType.TEXT, '.log')
+    browser_name = browser.driver.capabilities['browserName']
+    if browser_name == 'chrome':
+        log = "".join(f'{text}\n'
+                      for text in browser.driver.get_log(log_type='browser'))
+        allure.attach(log, 'browser_logs', AttachmentType.TEXT, '.log')
 
 
 def add_html(browser):

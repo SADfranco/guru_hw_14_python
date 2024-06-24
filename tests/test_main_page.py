@@ -66,7 +66,7 @@ def test_all_region_for_change():
 @allure.title('Search existing item')
 @allure.severity(Severity.CRITICAL)
 @allure.label("owner", "SADfranco")
-@allure.feature("Searching item")
+@allure.feature("Search item")
 @allure.link("https://www.tsum.ru/", name="Main Page")
 def test_search_item():
     test_item = Item(
@@ -104,7 +104,7 @@ def test_login_by_email():
 
 @allure.tag('web')
 @allure.tag('regress')
-@allure.title('Login nonexisting user')
+@allure.title('Login non-existing user')
 @allure.severity(Severity.CRITICAL)
 @allure.label("owner", "SADfranco")
 @allure.feature("Login from main page")
@@ -117,6 +117,6 @@ def test_login_by_non_existing_email():
     )
     main_page.open()
 
-    main_page.unsuccessful_login_by_nonexisting_email(test_user)
+    main_page.unsuccessful_login_by_non_existing_email(test_user)
 
     main_page.check_error_by_nonexisting_email()

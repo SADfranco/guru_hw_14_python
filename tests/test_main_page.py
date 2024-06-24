@@ -119,4 +119,4 @@ def test_login_by_non_existing_email():
 
     main_page.unsuccessful_login_by_non_existing_email(test_user)
 
-    main_page.check_error_by_nonexisting_email()
+    main_page.check_error_by_non_existing_email()

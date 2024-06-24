@@ -28,9 +28,9 @@ def configuration(request):
     browser_name = browser_name if browser_name != "" else "122.0"
 
     options = Options()
-    options.add_experimental_option("useAutomationExtension", False)
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_argument("--disable-blink-features=AutomationControlled")
+    # # options.add_experimental_option("useAutomationExtension", False)
+    # # options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    # options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument('--no-sandbox')
     options.add_argument("--disable-gpu")
     options.add_argument("--disable-dev-shm-usage")
